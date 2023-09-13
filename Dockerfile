@@ -11,6 +11,7 @@ RUN firebase setup:emulators:firestore
 RUN firebase setup:emulators:storage
 RUN firebase setup:emulators:ui
 RUN firebase setup:emulators:pubsub
+RUN yarn compileI18n
 ARG COMMIT=dev
 ENV NEXT_PUBLIC_COMMIT_HASH $COMMIT
 
